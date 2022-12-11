@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="25dp"
+    android:layout_height="match_parent"
+    tools:context=".Patient.PatientMenu">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:id="@+id/logo"
+        android:src="@drawable/header"/>
+
+    <TextView
+        style="@style/Headers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="MENUS"
+        android:gravity="center_vertical" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:id="@+id/patient_home"
+        style="@style/RegisterFieldLabels"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/patient_profile"
+        android:text="Profile"
+        style="@style/RegisterFieldLabels"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/patient_appointments"
+        android:text="Appointments"
+        style="@style/RegisterFieldLabels"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/patient_emergency"
+        android:text="Emergency"
+        style="@style/RegisterFieldLabels"
+        android:layout_weight="1"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/patient_documents"
+        android:text="Documents"
+        style="@style/RegisterFieldLabels"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/patient_feedback"
+        android:text="Feedback"
+        style="@style/RegisterFieldLabels"
+        android:layout_weight="1"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/patient_report"
+        android:text="Report"
+        style="@style/RegisterFieldLabels"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/patient_logout"
+        android:text="Logout"
+        style="@style/RegisterFieldLabels"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

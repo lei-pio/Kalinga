@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.kalinga">
+
+    <queries>
+        <!-- Specific intents you query for -->
+        <intent>
+            <action android:name="android.intent.action.DIAL" />
+        </intent>
+    </queries>
+
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Kalinga">
+
+        <activity android:name=".Caregiver.Caregiver_Profile" android:parentActivityName=".Caregiver.CaregiverHome" />
+        <activity android:name=".Caregiver.CaregiverHome" android:parentActivityName=".Caregiver.CaregiverHome" />
+        <activity android:name=".CreateAccount" android:parentActivityName=".Register_LogIn" />
+        <activity android:name=".Welcome" android:parentActivityName=".Register_LogIn" />
+        <activity android:name=".Patient.PatientInformation" android:parentActivityName=".Patient.PatientHome" />
+        <activity android:name=".Caregiver.CaregiverAppointment" android:parentActivityName=".Caregiver.CaregiverHome" />
+        <activity android:name=".Patient.PatientHome" android:parentActivityName=".Register_LogIn" />
+        <activity android:name=".Patient.PatientVerification" android:parentActivityName=".Patient.PatientHome" />
+        <activity android:name=".Caregiver.CaregiverInfo" android:parentActivityName=".Caregiver.CaregiverHome" />
+        <activity android:name=".Caregiver.Report" android:parentActivityName=".Caregiver.CaregiverDocument" />
+        <activity android:name=".Caregiver.CaregiverDocument" android:parentActivityName=".Caregiver.CaregiverHome" />
+        <activity android:name=".Caregiver.Caregiver_EmergencyContact" android:parentActivityName=".Caregiver.CaregiverHome" />
+        <activity android:name=".Caregiver.EMS_911" android:parentActivityName=".Caregiver.CaregiverHome" />
+        <activity android:name=".Caregiver.EMS_bcems" android:parentActivityName=".Caregiver.CaregiverHome" />
+        <activity android:name=".Caregiver.EMS_ems" android:parentActivityName=".Caregiver.CaregiverHome" />
+        <activity android:name=".Caregiver.Prescription" android:parentActivityName=".Caregiver.CaregiverHome" />
+        <activity android:name=".Caregiver.CaregiverVerification" android:parentActivityName=".Caregiver.CaregiverHome" />
+        <activity android:name=".Patient.PatientDocumentHome" android:parentActivityName=".Caregiver.CaregiverHome" />
+        <activity android:name=".Patient.PatientDocumentList" android:parentActivityName=".Patient.PatientHome" />
+        <activity android:name=".Patient.PatientAddDocument" android:parentActivityName=".Patient.PatientHome" />
+        <activity android:name=".Patient.Patient_EmergencyContact" android:parentActivityName=".Patient.PatientHome" />
+        <activity android:name=".Patient.PatientProfile" android:parentActivityName=".Patient.PatientHome" />
+        <activity android:name=".PrivacyPolicy" android:parentActivityName=".Caregiver.CaregiverHome" />
+        <activity android:name=".TermsConditioons" android:parentActivityName=".Caregiver.CaregiverHome" />
+        <activity android:name=".Contract" android:parentActivityName=".Caregiver.CaregiverHome" />
+        <activity android:name=".Patient.PatientMenu" android:parentActivityName=".Patient.PatientHome" />
+        <activity android:name=".Patient.PatientPrescriptionHome" android:parentActivityName=".Patient.PatientHome" />
+        <activity android:name=".Patient.PatientPrescriptionList" android:parentActivityName=".Patient.PatientHome" />
+        <activity android:name=".Patient.PatientCaregiverInfo" android:parentActivityName=".Patient.PatientHome" />
+        <activity android:name=".Patient.PaymentHome" android:parentActivityName=".Patient.PatientHome" />
+        <activity android:name=".PaymentPart" android:parentActivityName=".Patient.PatientHome" />
+        <activity android:name=".PaymentFull" android:parentActivityName=".Patient.PatientHome" />
+        <activity android:name=".Register_LogIn">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

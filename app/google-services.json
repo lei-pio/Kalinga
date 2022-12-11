@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "726181327666",
+    "project_id": "kalinga-40d40",
+    "storage_bucket": "kalinga-40d40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726181327666:android:4cfaf5c2c5af212410dd2b",
+        "android_client_info": {
+          "package_name": "app.kalinga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726181327666-sjmobng6fbg0lh5ike4at14q3o7k7qg6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsGcntteuDOI2F2ueFDhO3JzkA07RDbIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726181327666-sjmobng6fbg0lh5ike4at14q3o7k7qg6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

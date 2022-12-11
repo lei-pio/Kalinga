@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    android:layout_height="match_parent"
+    tools:context=".TermsConditioons">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="20"
+            android:id="@+id/logo"
+            android:src="@drawable/header"/>
+
+        <TextView
+            style="@style/Headers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="CONTRACT"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            style="@style/RegisterFields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="4dp"
+            android:text="DUTIES AND RESPONSIBILITIES FOR THE CAREGIVER\n\n
+- During the employment period, the Employee shall have the responsibility to perform the following duties:\n
+1. The employee shall have the responsibility to the patient’s health and well being.\n
+2. The employee shall have the responsibility to attend to the patient at all times during the employee's working hours.\n
+3. The employee shall have the responsibility to verify and look over the patient’s medication.\n
+4. The employee shall have the responsibility to communicate with the guardian.\n
+5. The employee shall have the responsibility to contact emergency services in the absence of a guardian if deemed necessary.\n
+6. The employee shall have the responsibility to not spread the patient’s personal information and medical records.\n
+7. The employee shall have the responsibility to report any anomalies regarding the patient.\n\n
+
+DUTIES AND RESPONSIBILITIES FOR THE PATIENT\n\n
+- During the employment period, the Patient shall have the responsibility to perform the following duties:\n
+1. Patients must provide accurate and comprehensive information about their health and medical history.\n
+2. Patients must notify the responsible caregiver of any changes in their general health status, symptoms, or allergies.\n
+3. Patients must report if they need to comprehend the intended therapy or their role in the plan.\n
+4. Patients are responsible for adhering to the suggested treatment plan, which includes instructions from nurses and other healthcare providers or medical personnel.\n
+5. Patients are accountable for treating others with dignity.\n
+6. Patients are in charge of what occurs if they refuse the intended therapy.\n
+7. Patients are accountable for respecting other people's property and rights.\n
+- The Parties agree that any responsibilities provided in this Agreement may not be assigned to any other party unless both parties agree to the assignment in writing.\n
+- The Parties agree that any responsibilities provided in this Agreement may not be assigned to any other party unless both parties agree to the assignment in writing.\n\n
+
+PAY AND COMPENSATION\n\n
+- The employee will get a minimum wage of 550 pesos, and his or her monthly income will be established every 15 days based on attendance totaling 16,500 pesos per month, subject to statutory deductions and withholdings as required by law.\n
+- The annual salary can go up by an amount that can be approved by the Employer, and that once the annual salary goes up, the new amount will be considered the annual salary for the rest of this contract.\n
+
+BENEFITS\n
+- The company hereby agrees that the employee shall receive the benefits throughout her entire employment. The benefits package includes paid yearly leave, parental leave, worker's compensation insurance, and paid sick leave. In addition, there is paid sick leave.\n\n
+
+WORKING HOURS AND LOCATION\n\n
+The Employee agrees that he or she will be working full time, with shifts lasting eight hours, Monday through Friday, with a lunch break of one hour each day.\n
+The location of the employee's place of work is to be determined according to the location of the client.\n\n
+TERMS OF AGREEMENT\n\n
+- This Agreement shall be effective on the date of signing this Agreement (hereinafter referred to as the “Effective Date”) and will end 10 days after termination.\n
+- Upon the end of the term of the Agreement, this Agreement will not be automatically renewed for a new term.\n\n
+TERMINATION\n\n
+- This Agreement may be terminated in case the following occurs:\n
+1. Immediately in case one of the Parties breaches this Agreement.\n
+2. At any given time by providing a written notice to the other party 10 days prior to terminating the Agreement.\n
+- Upon terminating this Agreement, the Employee will be required to return all Employer’s materials, products or any other content at his/her earliest convenience, but not beyond 10 days.\n\n
+CONFIDENTIALITY\n\n
+- All terms and conditions of this Agreement and any materials provided during the term of the Agreement must be kept confidential by the Employee, unless the disclosure is required pursuant to process of law.\n
+- Disclosing or using this information for any purpose beyond the scope of this Agreement, or beyond the exceptions set forth above, is expressly forbidden without the prior consent of the Employer.\n\n
+INTELLECTUAL PROPERTY\n\n
+- Hereby, the Employee agrees that any intellectual property provided to him/her by the Employer will remain the sole property of the Employer including, but not limited to, copyrights, patents, trade secret rights, and other intellectual property rights associated with any ideas, concepts, techniques, inventions, processes, works of authorship, Confidential Information or trade secrets.\n\n
+EXCLUSIVITY\n\n
+- The Parties agree that this Agreement is not an exclusive arrangement and that the Employer is entitled to enter into other similar agreements with other employees.\n
+- However, the Employee is not entitled to enter into a similar agreement as long as he/she remains a party to this Agreement.\n\n
+LIMITATION OF LIABILITY\n\n
+- In no event shall the Employer nor the Employee be individually liable for any damages for breach of duty by third parties, unless the Employer’s or Employee’s act or failure to act involves intentional misconduct, fraud, or a knowing violation of the law.\n
+SEVERABILITY\n\n
+- In an event where any provision of this Agreement is found to be void and unenforceable by a court of competent jurisdiction, then the remaining provisions will remain to be enforced in accordance with the Parties’ intention.\n\n
+ATTORNEY FEES\n\n
+- In the event of any dispute between the parties concerning the terms and provisions of this Agreement, the party prevailing in such dispute shall be entitled to collect from the other party all costs incurred in such dispute, including reasonable attorneys’ fees.\n\n
+ENTIRE AGREEMENT\n\n
+- This Agreement contains the entire agreement and understanding among the Parties hereto with respect to the subject matter hereof, and supersedes all prior agreements, understandings, inducements and conditions, express or implied, oral or written, of any nature whatsoever with respect to the subject matter hereof. The express terms hereof control and supersede any course of performance and/or usage of the trade inconsistent with any of the terms hereof.\n\n
+AMENDMENTS\n\n
+- The Parties agree that any amendments made to this Agreement must be in writing where they must be signed by both Parties to this Agreement.\n
+- As such, any amendments made by the Parties will be applied to this Agreement.\n
+"/>
+
+
+        <Button
+            android:layout_weight="0"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/terms_agree"
+            android:background="@color/green"
+            android:text="AGREE"/>
+
+    </LinearLayout>
+
+</ScrollView>

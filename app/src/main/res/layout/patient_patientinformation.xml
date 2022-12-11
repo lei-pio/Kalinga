@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    android:layout_height="match_parent"
+    tools:context=".Patient.PatientInformation">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/logo"
+        android:src="@drawable/header"/>
+
+    <TextView
+        style="@style/Headers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textSize="15sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="PATIENT INFORMATION"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        tools:ignore="RtlCompat" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="4dp"
+        android:layout_weight="0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0">
+
+        <TextView
+            android:id="@+id/fname_label"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            style="@style/RegisterFieldLabels"
+            android:text="FIRST NAME" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:layout_weight="7"
+            android:background="@drawable/text_box_border"
+            style="@style/RegisterFields"
+            android:id="@+id/patient_patinf_fname"
+            android:hint="type your first name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0">
+
+        <TextView
+            android:id="@+id/mname_label"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            style="@style/RegisterFieldLabels"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            android:text="MIDDLE NAME" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:background="@drawable/text_box_border"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:layout_weight="7"
+            style="@style/RegisterFields"
+            android:id="@+id/patient_patinf_mname"
+            android:hint="type your middle name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0">
+
+        <TextView
+            android:id="@+id/lname_label"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            style="@style/RegisterFieldLabels"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            android:text="LAST NAME" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:inputType="text"
+            style="@style/RegisterFields"
+            android:background="@drawable/text_box_border"
+            android:layout_weight="7"
+            android:id="@+id/patient_patinf_lname"
+            android:hint="type your last name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0">
+
+        <TextView
+            android:id="@+id/cnumber_label"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            style="@style/RegisterFieldLabels"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            android:text="CONTACT NUMBER" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:layout_weight="7"
+            android:background="@drawable/text_box_border"
+            style="@style/RegisterFields"
+            android:id="@+id/patient_patinf_cnumber"
+            android:hint="type your contact number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0">
+
+        <TextView
+            android:id="@+id/email_label"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            style="@style/RegisterFieldLabels"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+
+            android:text="EMAIL" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:inputType="text"
+            style="@style/RegisterFields"
+            android:background="@drawable/text_box_border"
+            android:layout_weight="7"
+            android:id="@+id/patient_patinf_email"
+            android:hint="type your email" />
+
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0">
+
+
+        <TextView
+            style="@style/RegisterFieldLabels"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="ADDRESS" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            style="@style/RegisterFields"
+            android:background="@drawable/text_box_border"
+            android:layout_weight="1"
+            android:id="@+id/patient_patinf_province"
+            android:hint="Province" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            style="@style/RegisterFields"
+            android:background="@drawable/text_box_border"
+            android:layout_weight="1"
+            android:id="@+id/patient_patinf_city"
+            android:hint="City" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            style="@style/RegisterFields"
+            android:background="@drawable/text_box_border"
+            android:layout_weight="1"
+            android:id="@+id/patient_patinf_barangay"
+            android:hint="Barangay" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            style="@style/RegisterFields"
+            android:background="@drawable/text_box_border"
+            android:layout_weight="1"
+            android:id="@+id/landmark"
+            android:hint="Landmark" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            style="@style/RegisterFields"
+            android:background="@drawable/text_box_border"
+            android:layout_weight="1"
+            android:id="@+id/patient_patinf_zipcode"
+            android:hint="Zip Code" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="12sp"
+            android:layout_weight="9"
+            android:hint='BY SELECTING "PROCEED", YOU ARE CONFIRMING THAT
+            YOU HAVE\nREAD AND AGREE TO THE KALINGA TERMS AND\nCONDITIONS AS WELL AS TO THE PRIVACY POLICY.' />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/patinf_privacy_policy"
+            android:layout_weight="0"
+            android:textStyle="bold"
+            android:text="Privacy Policy"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_weight="0"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/patinf_terms_conditions"
+            android:text="Terms and Conditions"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_weight="0"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/patient_info_proceed"
+        android:background="@color/green"
+        android:text="PROCEED"/>
+
+</LinearLayout>

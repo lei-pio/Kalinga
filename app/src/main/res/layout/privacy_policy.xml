@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    android:layout_height="match_parent"
+    tools:context=".PrivacyPolicy">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/logo"
+        android:src="@drawable/header"/>
+
+    <TextView
+        style="@style/Headers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textSize="15sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="PRIVACY POLICY"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        tools:ignore="RtlCompat" />
+
+  <TextView
+        style="@style/RegisterFields"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+      android:layout_weight="1"
+        android:textSize="15sp"
+      android:justificationMode="inter_word"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="The KALINGA Privacy Policy is to ensure that the information of the users are secured and safe. Any malicious acts using the users information will result in the shut down of the application as well as a report will be given to authorities.\n\nThe Privacy Rule allows covered health care providers to share protected health information for treatment purposes without patient authorization, as long as they use reasonable safeguards when doing so. These treatment communications may occur orally or in writing, by phone, fax, e-mail, or otherwise.
+"
+        tools:ignore="RtlCompat" />
+
+
+    <Button
+        android:layout_weight="0"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/privacy_agree"
+        android:background="@color/green"
+        android:text="AGREE"/>
+
+</LinearLayout>

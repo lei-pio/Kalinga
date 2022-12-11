@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="25dp"
+    android:layout_height="match_parent"
+    tools:context=".Caregiver.CaregiverVerification">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:id="@+id/logo"
+        android:src="@drawable/header"/>
+
+    <TextView
+        style="@style/Headers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="VERIFICATION"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/RegisterFields"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0"
+        android:textStyle="bold"
+        android:text="FOR VERFICATION PUSPOSES, PLEASE UPLOAD THE FOLLOWING DOCUMENTS:" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/RegisterFields"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0"
+        android:text=" - IDENTIFICATION SUCH AS CAREGIVER ID,
+        PASSPORT, ETC.\n
+ - EDUCATIONAL BACKGROUND SUCH AS CAREGIVER DIPLOMA\n
+ - POLICE CLEARANCE OR NBI CLEARANCE\n
+ - PHILHEALTH\n
+ - SSS\n
+ - PAG IBIG" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/RegisterFields"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="*FILENAME: REQUIREMENT-TYPE.JPG\n
+*FILETYPE: PNG, JPG, JPEG, PDF" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="8"
+            android:id="@+id/verification_scanimage"
+            android:src="@drawable/scan_icon"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@drawable/text_box_border"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="text"
+        android:layout_weight="1"
+        style="@style/RegisterFields"
+        android:id="@+id/verification_filename"
+        android:hint="document_type.filetype [SSS.jpg]" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/text_box_border"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom= "5dp"
+            android:visibility="visible"
+            android:background="@drawable/text_box_border"
+            android:layout_weight="0">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/RegisterFields"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="CAREGIVER-ID.JPG" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+                android:src="@drawable/x_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom= "5dp"
+            android:visibility="invisible"
+            android:id="@+id/new_file_layout"
+            android:background="@drawable/text_box_border"
+            android:layout_weight="0">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/RegisterFields"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:id="@+id/new_file_name_empty"
+                android:visibility="invisible"
+                android:text="" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+                android:id="@+id/new_file_x_icon"
+                android:visibility="invisible"
+                android:src="@drawable/x_icon"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:id="@+id/verification_checkbox"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="12sp"
+            android:layout_weight="11"
+            android:hint="BY SELECTING PROCEED, YOU ARE CONFIRMING THAT\nTHE DOCUMENTS PROVIDED ARE VALID ANDACCURATE.\nYOU ARE ALSO CONFIRMING THAT YOU HAVE SELECTED\n A ROLE AND NO LONGER CAN UNDO THIS ACTION."/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/red"
+        android:layout_marginRight="10dp"
+        android:id="@+id/verification_errormsg"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0"
+        android:visibility="invisible"
+        android:hint="Policy is not checked"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_weight="0">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_weight="0"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/text_box_border"
+        style="@style/RegisterFields"
+        android:id="@+id/verification_back"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:hint="BACK" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_weight="0"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/text_box_border"
+        style="@style/RegisterFields"
+        android:id="@+id/verification_proceed"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:hint="PROCEED" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

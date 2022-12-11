@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LogInText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="ButtonText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="RegisterFieldLabels" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="RegisterFields" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="ContactNumbers" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Back_Buttons" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:paddingLeft">60dp</item>
+        <item name="android:paddingRight">60dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Headers" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

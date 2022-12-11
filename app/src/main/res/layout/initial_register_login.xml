@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    android:layout_height="match_parent"
+    tools:context=".Register_LogIn">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:id="@+id/logo"
+        android:src="@drawable/logo"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:id="@+id/account_icon"
+            android:layout_weight="1"
+            android:src="@drawable/account_icon"/>
+
+        <EditText
+            android:layout_toRightOf="@id/account_icon"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/login_username"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:inputType="text"
+            android:layout_weight="7"
+            android:hint="Username" />
+        
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0">
+        
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:id="@+id/locker_icon"
+            android:layout_weight="1"
+            android:src="@drawable/locker_icon"/>
+
+        <EditText
+            android:layout_toRightOf="@id/account_icon"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/login_password"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:inputType="textPassword"
+            android:layout_weight="7"
+            android:hint="Password" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/red"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/status"/>
+
+    <Button
+       android:layout_weight="0"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/log_in_button"
+        android:textColor="@color/black"
+        android:text="LOG IN" />
+
+    <Button
+        android:layout_weight="0"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/sign_up"
+        android:background="@color/green"
+        android:text="SIGN UP"/>
+
+    <TextView
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+</LinearLayout>

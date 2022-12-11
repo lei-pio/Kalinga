@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="25dp"
+    android:layout_height="match_parent"
+    tools:context=".Patient.PatientAddDocument">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:id="@+id/logo"
+        android:src="@drawable/header"/>
+
+    <TextView
+        style="@style/Headers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="ADD DOCUMENT"
+        android:gravity="center_vertical" />
+
+    <TextView
+        style="@style/Headers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:justificationMode="inter_word"
+        android:text="TO PROVIDE A MORE ACCURATE SERVICE, PLEASE UPLOAD THE DOCUMENTATION FOR THE NEEDED SERVICE."
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/RegisterFields"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:textStyle="bold"
+            android:text="ENTER DOCUMENT NAME:\n*FILENAME: HIGHBLOOD RESULT" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@drawable/text_box_border"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text"
+            android:layout_weight="0"
+            style="@style/RegisterFields"
+            android:id="@+id/patient_addoc_filename"
+            android:hint="BLOOD TEST REPORT" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/RegisterFields"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:textStyle="bold"
+            android:text="UPLOAD DOCUMENT: " />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/RegisterFields"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="*FILE TYPE: .JPG, .JPEG, .PNG" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="8"
+            android:id="@+id/patient_addoc__scanimage"
+            android:src="@drawable/scan_icon"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/text_box_border"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom= "5dp"
+            android:visibility="invisible"
+            android:id="@+id/patient_addoc_new_file_layout"
+            android:background="@drawable/text_box_border"
+            android:layout_weight="0">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/RegisterFields"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:id="@+id/patient_addoc_new_file_name_empty"
+                android:visibility="invisible"
+                android:text="BT-REPORT.jpg" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+                android:id="@+id/patient_addoc_new_file_x_icon"
+                android:visibility="invisible"
+                android:src="@drawable/x_icon"/>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:id="@+id/patient_addoc_checkbox"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="12sp"
+            android:layout_weight="11"
+            android:hint="BY SELECTING PROCEED, YOU ARE CONFIRMING THAT\nTHE DOCUMENT THAT YOU HAVE UPLOADED IS VALID\nAND THAT IT WILL PROVIDE INFORMATION THAT WIL\n AID IN WHAT SERVICE THE PATIENT NEEDS."/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/red"
+        android:layout_marginRight="10dp"
+        android:id="@+id/verification_errormsg"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0"
+        android:visibility="invisible"
+        android:hint="Policy is not checked"/>
+
+
+
+</LinearLayout>

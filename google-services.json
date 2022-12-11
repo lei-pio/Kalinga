@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "938206909833",
+    "project_id": "kalinga-be51d",
+    "storage_bucket": "kalinga-be51d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938206909833:android:f4a664b9505b14d3e3bd58",
+        "android_client_info": {
+          "package_name": "app.kalinga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938206909833-65h9d19knfruf2e3hqa6epnpeomh7q6i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.kalinga",
+            "certificate_hash": "dc89822f36da1bc4c5a96ac3c8f05e3ad47ae54f"
+          }
+        },
+        {
+          "client_id": "938206909833-7molaupl3oh4b1egcjdpun8j98u69o5b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbkanx-RlJUzxHudKMMG1hmmPdeQhDn18"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938206909833-7molaupl3oh4b1egcjdpun8j98u69o5b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

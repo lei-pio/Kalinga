@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="25dp"
+    android:layout_height="match_parent"
+    tools:context=".Patient.PatientCaregiverInfo">
+
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="213dp"
+        android:layout_height="87dp"
+        android:src="@drawable/kalingav_2"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/patient_menu"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="44dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/burger_icon" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            style="@style/RegisterFields"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="48dp"
+            android:background="@drawable/text_box_border"
+            android:hint="SEARCH"
+            android:inputType="text" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="29dp"
+            android:clickable="true"
+            android:src="@drawable/search" />
+
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/Headers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="CAREGIVER INFORMATION"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        tools:ignore="RtlCompat" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/fullname_label"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            style="@style/RegisterFieldLabels"
+            android:text="FIRST NAME" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="7"
+            android:background="@drawable/text_box_border"
+            style="@style/RegisterFields"
+            android:enabled="false"
+            android:id="@+id/patient_careinf_fullname"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/cnumber_label"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            style="@style/RegisterFieldLabels"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            android:text="CONTACT NUMBER" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="7"
+            android:background="@drawable/text_box_border"
+            style="@style/RegisterFields"
+            android:enabled="false"
+            android:id="@+id/patient_careinf_contactnumber"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/cpassword_label"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            style="@style/RegisterFieldLabels"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            android:textSize="14sp"
+            android:text="HOME ADDRESS" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="13sp"
+            android:autoSizeMaxTextSize="14sp"
+            android:autoSizeStepGranularity="2sp"
+            android:background="@drawable/text_box_border"
+            android:layout_weight="7"
+            android:enabled="false"
+            android:id="@+id/patient_careinf_address"
+            style="@style/RegisterFields"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/email_label"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            style="@style/RegisterFieldLabels"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+
+            android:text="EMAIL" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:background="@drawable/text_box_border"
+            style="@style/RegisterFields"
+            android:enabled="false"
+            android:id="@+id/patient_careinf_email"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="@drawable/text_box_border">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/RegisterFieldLabels"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:text="IDENTIFICATION:" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:src="@drawable/id_card"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_weight="1">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            android:background="@drawable/text_box_border"
+            style="@style/RegisterFields"
+            android:id="@+id/pat_careinf_back"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:hint="BACK" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            android:background="@drawable/text_box_border"
+            style="@style/RegisterFields"
+            android:id="@+id/patient_hire"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:hint="HIRE" />
+    </LinearLayout>
+</LinearLayout>
+

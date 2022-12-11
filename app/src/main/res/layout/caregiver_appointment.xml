@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="25dp"
+    android:layout_height="match_parent"
+    tools:context=".Caregiver.CaregiverAppointment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/logo"
+        android:src="@drawable/header"/>
+
+    <TextView
+        style="@style/Headers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="APPOINTMENT"
+        android:textAlignment="center"
+        android:gravity="center_vertical" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/text_box_border"
+        android:layout_weight="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/green"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/account_icon"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/RegisterFieldLabels"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="5"
+                    android:text="ANA JULES GOMEZ" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/RegisterFields"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:text="CONTACT NUMBER: 09982234688" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/RegisterFields"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:text="PATIENT: ELDERLY WITH HIGHBLOOD" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/RegisterFields"
+                        android:textSize="15sp"
+                        android:id="@+id/see_more"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="4"
+                        android:text="SEE MORE" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:id="@+id/see_more_icon"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/dropdown_icon"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="@drawable/text_box_border"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                style="@style/RegisterFields"
+                android:textSize="15sp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Time in:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                style="@style/RegisterFields"
+                android:textSize="15sp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="7"
+                android:background="@drawable/text_box_border"
+                android:id="@+id/timein_text"
+                android:text="" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/text_box_border"
+                style="@style/ButtonText"
+                android:id="@+id/timein_button"
+                android:hint="RECORD" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    style="@style/RegisterFields"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Time out:" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/RegisterFields"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="7"
+                    android:background="@drawable/text_box_border"
+                    android:id="@+id/timeout_text"
+                    android:text="" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:inputType="textPassword"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:enabled="false"
+                    android:background="@drawable/text_box_border"
+                    style="@style/ButtonText"
+                    android:id="@+id/timeout_button"
+                    android:hint="RECORD" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Headers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/red"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:id="@+id/appointment_status"
+                android:layout_marginBottom="8dp"
+                android:text="" />
+
+            <TextView
+                style="@style/Headers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="DOCUMENTS"
+                android:gravity="center_vertical" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:id="@+id/appointment_document"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/documents"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/RegisterFields"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="DOCUMENTS"
+                    android:gravity="center_horizontal" />
+
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:id="@+id/appointment_prescription"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/prescription_icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/RegisterFields"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:text="PRESCRIPTION"
+                        android:gravity="center_horizontal" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_box_border"
+        style="@style/RegisterFields"
+        android:id="@+id/appointment_back"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:hint="BACK" />
+    </LinearLayout>
+</LinearLayout>

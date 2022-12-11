@@ -1,0 +1,5 @@
+username,password,firstName,middleName,lastName,contactNumber,email,province,city,barangay,landmarks,userType
+maria,pacita00,Maria,Pilares,Tenor,09283555276,maria_pacita@gmail.com,Pampanga,Apalilt,Brgy. San Vicente,McArthur Highway,patient
+james,pogi01,James,Lagasca,Menor,09923545552,james_lm@gmail.com,Cebu,Mandaue,Ibabao Estancia,Kentredder Bldg., A. Cortes Street,patient
+maria,maria000,maria,del,norte,09880034688, mariadelnorte@gmail.com,Metro Manila,Muntinlupa City,Cupang, Theater Mall Greenhills Shopping Center,caregiver
+policarpio,pcarps,Jaime,Del Pilar, Policarpio,09981349214,pcarpio@gmail.com,Metro Manila,Quezon City,Brgy. Marilag Proj 4,15 Lakandula St.,caregiver

@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    android:layout_height="match_parent"
+    tools:context=".PaymentPart">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/logo"
+        android:src="@drawable/header"/>
+
+    <TextView
+        style="@style/Headers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textSize="15sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="PAYMENT"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        tools:ignore="RtlCompat" />
+
+
+    <TextView
+        style="@style/RegisterFields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:justificationMode="inter_word"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="The hourly rate is P90.00. Amount will be determined depending on the required hour of service"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        tools:ignore="RtlCompat" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Time"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        style="@style/RegisterFields"
+        android:padding="0dp"
+        android:layout_weight="0"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Required hours of service [1-24 only]"
+        android:textSize="15sp"
+        android:inputType="number"
+        android:background="@drawable/text_box_border"
+        android:textAlignment="center"
+        android:id="@+id/required_hours"
+        style="@style/RegisterFields"
+        android:padding="10dp"
+        android:layout_weight="0"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Amount to pay"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        style="@style/RegisterFields"
+        android:padding="0dp"
+        android:layout_weight="0"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:hint=""
+        android:textSize="15sp"
+        android:text=""
+        android:background="@drawable/text_box_border"
+        android:textAlignment="center"
+        style="@style/RegisterFields"
+        android:padding="10dp"
+        android:id="@+id/amount_to_pay"
+        android:layout_weight="0"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonText"
+        android:id="@+id/calculate"
+        android:text="Calculate Amount"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="PAYMENT CHANNELS"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        style="@style/RegisterFields"
+        android:padding="0dp"
+        android:textStyle="bold"
+        android:layout_weight="0"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/gcash_logo"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/dragonpay_logo"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonText"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/part_hire"
+        android:text="HIRE CAREGIVER"/>
+
+
+</LinearLayout>

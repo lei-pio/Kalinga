@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Patient.PatientInformation"
+    android:layout_margin="30dp"
+    tools:ignore="ExtraText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_health_fitness_tips"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:id="@+id/logo"
+            android:src="@drawable/header"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="@drawable/text_box_border">
+
+            <TextView
+                style="@style/Headers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="APPOINTMENT"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                tools:ignore="RtlCompat" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/fname_label"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="5"
+                    style="@style/RegisterFieldLabels"
+                    android:text="NAME" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_weight="7"
+                    android:background="@drawable/text_box_border"
+                    style="@style/RegisterFields"
+                    android:text="ANNA JULES GOMEZ" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/cnumber_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/RegisterFieldLabels"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="5"
+                    android:text="CONTACT NUMBER" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_weight="7"
+                    android:background="@drawable/text_box_border"
+                    style="@style/RegisterFields"
+                    android:text="09982234688" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/cpassword_label"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    style="@style/RegisterFieldLabels"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="5"
+                    android:textSize="14sp"
+                    android:text="HOME ADDRESS" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="13sp"
+                    android:autoSizeMaxTextSize="14sp"
+                    android:autoSizeStepGranularity="2sp"
+                    android:background="@drawable/text_box_border"
+                    android:layout_weight="7"
+                    style="@style/RegisterFields"
+                    android:text="BLK 6 HOUSE #24 AURORA HILL BAGUIO CITY PHILIPPINES 2500 " />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/lname_label"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    style="@style/RegisterFieldLabels"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="5"
+                    android:text="EMAIL" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    style="@style/RegisterFields"
+                    android:textSize="11sp"
+                    android:background="@drawable/text_box_border"
+                    android:layout_weight="7"
+                    android:text="ANNAJULESGOMEZ@USER.COM" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/email_label"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    style="@style/RegisterFieldLabels"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="5"
+                    android:text="PATIENT: " />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/RegisterFields"
+                    android:background="@drawable/text_box_border"
+                    android:layout_weight="7"
+                    android:text="ELDERLY WITH HIGHBLOOD" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/text_box_border"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/RegisterFieldLabels"
+                android:layout_gravity="center_vertical"
+                android:text="Rate: " />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/RegisterFields"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="5"
+                android:text="P200.00 per hour" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@drawable/text_box_border"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/RegisterFieldLabels"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:text="Time: " />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/RegisterFields"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="5"
+                android:text="10am - 4pm" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@drawable/text_box_border"
+            android:layout_marginTop="10dp"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/RegisterFieldLabels"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:text="Other\nInstructions: " />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/RegisterFields"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="6"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="15sp"
+                android:autoSizeMaxTextSize="17sp"
+                android:autoSizeStepGranularity="2sp"
+                android:text="-Check blood pressure twice a day\n-Record Results\n-Ensure the issued medication is taken at the right time and right dosage\n-contact through the app if there are questions or concerns" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            style="@style/RegisterFieldLabels"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="FEEDBACK" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/text_box_border"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="@drawable/text_box_border"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/account_icon"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/RegisterFieldLabels"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:text="ANONYMOUS" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/RegisterFields"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="6"
+                        android:text="VERY RESPONSIVE ON CHATS AND QUESTIONS" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="@drawable/text_box_border"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/account_icon"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="6">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/RegisterFieldLabels"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:text="ANONYMOUS" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/RegisterFields"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:text="EASY TO COMMUNICATE WITH" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="152dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/hirefulltime_icon"
+        tools:srcCompat="@drawable/back_icon" />
+
+    <TextView
+        android:id="@+id/fname_label8"
+        style="@style/RegisterFieldLabels"
+        android:layout_width="125dp"
+        android:layout_height="17dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_weight="5"
+        android:text="EMAIL: "
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/fname_label10"
+        app:layout_constraintEnd_toStartOf="@+id/fname_label9"
+        app:layout_constraintTop_toBottomOf="@+id/fname_label6" />
+
+    <TextView
+        android:id="@+id/fname_label10"
+        style="@style/RegisterFieldLabels"
+        android:layout_width="116dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="5"
+        android:text="IDENTIFICATION:"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/fname_label8"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <TextView
+        android:id="@+id/fname_label7"
+        style="@style/RegisterFieldLabels"
+        android:layout_width="168dp"
+        android:layout_height="33dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="5"
+        android:text="No. 1 home street, near home, baguio City"
+        android:textColor="#534F4F"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/fname_label9"
+        app:layout_constraintTop_toBottomOf="@+id/fname_label5"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <TextView
+        android:id="@+id/fname_label9"
+        style="@style/RegisterFieldLabels"
+        android:layout_width="197dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="5"
+        android:text="MYPERSONALEMAIL@ghmail.com"
+        android:textColor="#534F4F"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/fname_label7"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <TextView
+        android:id="@+id/fname_label4"
+        style="@style/RegisterFieldLabels"
+        android:layout_width="110dp"
+        android:layout_height="17dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_weight="5"
+        android:text="CONTACT NO.:"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/fname_label6"
+        app:layout_constraintEnd_toStartOf="@+id/fname_label5"
+        app:layout_constraintTop_toBottomOf="@+id/fname_label2" />
+
+    <TextView
+        android:id="@+id/fname_label6"
+        style="@style/RegisterFieldLabels"
+        android:layout_width="124dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_weight="5"
+        android:text="HOME ADDRESS:"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/fname_label8"
+        app:layout_constraintEnd_toStartOf="@+id/fname_label7"
+        app:layout_constraintTop_toBottomOf="@+id/fname_label4" />
+
+    <TextView
+        android:id="@+id/fname_label2"
+        style="@style/RegisterFieldLabels"
+        android:layout_width="49dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="124dp"
+        android:layout_marginRight="124dp"
+        android:layout_weight="5"
+        android:text="NAME:"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/fname_label4"
+        app:layout_constraintEnd_toStartOf="@+id/fname_label3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/fname_label3"
+        style="@style/RegisterFieldLabels"
+        android:layout_width="171dp"
+        android:layout_height="21dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="5"
+        android:text="care giver full name"
+        android:textColor="#534F4F"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/fname_label5"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        tools:layout_editor_absoluteX="198dp" />
+
+    <TextView
+        android:id="@+id/fname_label5"
+        style="@style/RegisterFieldLabels"
+        android:layout_width="175dp"
+        android:layout_height="17dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="5"
+        android:text="09XXXXXXXXX"
+        android:textColor="#534F4F"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/fname_label7"
+        app:layout_constraintTop_toBottomOf="@+id/fname_label3"
+        tools:layout_editor_absoluteX="198dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        style="@style/RegisterFields"
+        android:layout_width="303dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="7"
+        android:background="@drawable/text_box_border"
+        android:hint="SEARCH"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        tools:ignore="TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="78dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="213dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kalingav_2" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="36dp"
+        android:layout_height="44dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextText"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/burger_icon"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="34dp"
+        android:layout_height="29dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="@+id/editTextText"
+        app:srcCompat="?android:attr/actionModeWebSearchDrawable"
+        tools:layout_editor_absoluteY="122dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="207dp"
+        android:layout_height="109dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fname_label10"
+        app:srcCompat="@drawable/id_icon" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="75dp"
+        android:layout_height="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/reviews__button_icon" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="258dp"
+        android:layout_height="141dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/reviews_temp_icon" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="152dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
+        app:layout_constraintEnd_toStartOf="@+id/imageView11"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/hirefulltime_icon" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="152dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/hirefulltime_icon"
+        tools:srcCompat="@drawable/hireparttime_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

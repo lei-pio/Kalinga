@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    android:layout_height="match_parent"
+    tools:context=".PaymentFull">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/logo"
+        android:src="@drawable/header"/>
+
+    <TextView
+        style="@style/Headers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textSize="15sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="PAYMENT"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        tools:ignore="RtlCompat" />
+
+
+    <TextView
+        style="@style/RegisterFields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:justificationMode="inter_word"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="The monthly salary of caregiver is P16,500.00 with a daily salary of P550.00"
+        android:textAlignment="center"
+        tools:ignore="RtlCompat" />
+
+
+
+    <TextView
+        android:justificationMode="inter_word"
+        android:layout_width="match_parent"
+        android:text="Your duties as a caregiver\n\n1. The employee shall have the responsibility to the patient’s health and well being.\n
+2. The employee shall have the responsibility to attend to the patient at all times during the employee's working hours.\n
+3. The employee shall have the responsibility to verify and look over the patient’s medication.\n
+4. The employee shall have the responsibility to communicate with the guardian.\n
+5. The employee shall have the responsibility to contact emergency services in the absence of a guardian if deemed necessary.\n
+6. The employee shall have the responsibility to not spread the patient’s personal information and medical records.\n
+7. The employee shall have the responsibility to report any anomalies regarding the patient\n"
+        android:textSize="15sp"
+        style="@style/RegisterFields"
+        android:padding="0dp"
+        android:layout_weight="0"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="FULL CONTRACT DETAILS"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        style="@style/RegisterFields"
+        android:padding="0dp"
+        android:layout_weight="0"
+        android:textStyle="bold"
+        android:id="@+id/contract_full"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonText"
+        android:id="@+id/full_hire"
+        android:layout_marginTop="30dp"
+        android:text="HIRE CAREGIVER"/>
+
+
+</LinearLayout>

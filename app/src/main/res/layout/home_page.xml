@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:actionBarNavMode="standard">
+
+    <ImageView
+        android:id="@+id/settingsButton"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/logoutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reportButton"
+        app:srcCompat="@drawable/settings_icon" />
+
+    <ImageView
+        android:id="@+id/helpButton"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoutButton"
+        app:srcCompat="@drawable/help_icon" />
+
+    <ImageView
+        android:id="@+id/logoutButton"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/helpButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsButton"
+        app:srcCompat="@drawable/logout_icon" />
+
+    <ImageView
+        android:id="@+id/reportButton"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/settingsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/reviewsButton"
+        app:layout_constraintTop_toBottomOf="@+id/prescriptionButton"
+        app:srcCompat="@drawable/report_icon" />
+
+    <ImageView
+        android:id="@+id/reviewsButton"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/settingsButton"
+        app:layout_constraintEnd_toStartOf="@+id/reportButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/documentsButtons"
+        app:srcCompat="@drawable/reviews_icon" />
+
+    <ImageView
+        android:id="@+id/deliveryButtons"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/prescriptionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chatsButton"
+        app:layout_constraintTop_toBottomOf="@+id/eWalletButton"
+        app:srcCompat="@drawable/delivery_icon" />
+
+    <ImageView
+        android:id="@+id/chatsButton"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/documentsButtons"
+        app:layout_constraintEnd_toStartOf="@+id/deliveryButtons"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appoitmentsButton"
+        app:srcCompat="@drawable/chats_icon" />
+
+    <ImageView
+        android:id="@+id/documentsButtons"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/reviewsButton"
+        app:layout_constraintEnd_toStartOf="@+id/prescriptionButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chatsButton"
+        app:srcCompat="@drawable/documents_icon" />
+
+    <ImageView
+        android:id="@+id/prescriptionButton"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/reportButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/documentsButtons"
+        app:layout_constraintTop_toBottomOf="@+id/deliveryButtons"
+        app:srcCompat="@drawable/prescription_icaon" />
+
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="339dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginRight="132dp"
+        android:layout_weight="5"
+        android:src="@drawable/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="363dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/green"
+        android:baselineAligned="true"
+        android:clickable="false"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:lineSpacingExtra="8sp"
+        android:text="WELCOME TO KALINGA! GREETINGS,  JUAN SAN CARLOS. HAVE A GREAT DAY. MONDAY, AUGUST 29, 2022"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo2" />
+
+    <ImageView
+        android:id="@+id/eWalletButton"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/deliveryButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/appoitmentsButton"
+        app:layout_constraintTop_toBottomOf="@+id/profileButton"
+        app:srcCompat="@drawable/e_wallet_icon" />
+
+    <ImageView
+        android:id="@+id/profileButton"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/eWalletButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/homeButton"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeMessage"
+        app:srcCompat="@drawable/profile_icon" />
+
+    <ImageView
+        android:id="@+id/homeButton"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/appoitmentsButton"
+        app:layout_constraintEnd_toStartOf="@+id/profileButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeMessage"
+        app:srcCompat="@drawable/home_icaon" />
+
+    <ImageView
+        android:id="@+id/appoitmentsButton"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/chatsButton"
+        app:layout_constraintEnd_toStartOf="@+id/eWalletButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeButton"
+        app:srcCompat="@drawable/appoitments_icaon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

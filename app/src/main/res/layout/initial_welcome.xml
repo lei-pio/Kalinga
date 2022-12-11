@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    android:layout_height="match_parent"
+    tools:context=".Welcome">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/logo"
+        android:src="@drawable/header"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="@drawable/text_box_border">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:text="WELCOME TO KALINGA"
+            style="@style/Headers"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            tools:ignore="RtlCompat" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:textSize="8sp"
+            android:justificationMode="inter_word"
+            android:text="
+An application for the needing patients and for the caring caregivers.\n\n
+
+Looking for a job? Head on over to the Caregiver User Type and start your career as a caregiver for different patients. As you continue on creating your account for Kalinga, you will be guided thoroughly on how to do things around the application. You may check out different patients to take care of and be the best caregiver that has ever existed.\n\n
+
+Or are you a patient? Continue on the Patient User Type and start looking for the care you need by hiring a caregiver that is suited for you. You will be guided accordingly as you explore the application and fully manage your own personal medical records and documents.\n\n
+
+Happy Patient, Healthy Living\n
+Kalinga Team, always looking out for you\n"
+            style="@style/Headers"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="SELECT USER TYPE"
+            style="@style/Headers"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            tools:ignore="RtlCompat" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:id="@+id/c"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/text_box_border">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/caregiver_icon"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:text="CAREGIVER"
+                    android:layout_marginTop="10dp"
+                    style="@style/Headers"
+                    android:textAlignment="center"
+                    android:id="@+id/welcome_caregiver"
+                    android:gravity="center_vertical"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:id="@+id/p"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/text_box_border">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:id="@+id/patient_icon"
+                    android:src="@drawable/nursing_home_icon"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:layout_marginTop="10dp"
+                    android:text="PATIENT"
+                    android:id="@+id/welcome_patient"
+                    style="@style/Headers"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+        <Button
+            android:layout_weight="0"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/welcome_next"
+            android:background="@color/green"
+            android:text="NEXT"/>
+    </LinearLayout>
+</LinearLayout>
