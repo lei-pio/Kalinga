@@ -30,7 +30,7 @@ public class PaymentFull extends AppCompatActivity {
     }
 
     public void hire() {
-        Intent intent = new Intent(this, PatientHome.class);
+        Intent intent = new Intent(this, PaymentFull.class);
         startActivity(intent);
     }
 }
