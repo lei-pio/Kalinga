@@ -69,7 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/patient_feedback"
-        android:text="Feedback"
+        android:text="CONTACT US"
         style="@style/RegisterFieldLabels"
         android:layout_weight="1"/>
 

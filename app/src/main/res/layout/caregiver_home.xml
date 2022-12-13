@@ -282,7 +282,7 @@
         style="@style/RegisterFields"
         android:textStyle="bold"
         android:textSize="15sp"
-        android:hint="REPORT" />
+        android:hint="CONTACT US" />
 
 
     <Button
