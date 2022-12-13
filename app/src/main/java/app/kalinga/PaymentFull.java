@@ -8,6 +8,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import app.kalinga.Patient.PatientHome;
+import app.kalinga.Patient.PaymentHome;
 
 public class PaymentFull extends AppCompatActivity {
 
@@ -18,7 +19,7 @@ public class PaymentFull extends AppCompatActivity {
 
         TextView contract = findViewById(R.id.contract_full);
         contract.setOnClickListener(x -> contract());
-
+// full_hire
         Button hire = findViewById(R.id.full_hire);
         hire.setOnClickListener(x -> hire());
 
@@ -30,7 +31,7 @@ public class PaymentFull extends AppCompatActivity {
     }
 
     public void hire() {
-        Intent intent = new Intent(this, PaymentFull.class);
+        Intent intent = new Intent(this, PaymentHome.class);
         startActivity(intent);
     }
 }
